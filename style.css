@@ -1,0 +1,25 @@
+#draggable-box {
+  width: 150px;
+  height: 100px;
+  background-color: skyblue;
+  color: white;
+  text-align: center;
+  line-height: 100px; /* centers the text vertically */
+  border: 2px solid #333;
+  position: absolute; /* so it can be moved on the page */
+  cursor: grab; /* visual cue that it's draggable */
+}
+
+#resizer-handle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: se-resize; /* diagonal arrow for bottom-right resize */
+}
+
+#draggable-box:active {
+  cursor: grabbing;
+}
